@@ -115,7 +115,7 @@ So, $\theta^{T}x + \theta_0 \in \mathbb{R}$. In other words, $\theta^{T}x + \the
 
 ## The random linear classifier algorithm
 
-This is the **random linear classifier in pseudocode** (from the section "Learning linear classifiers" [here](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/courseware/Week1/linear_classifiers)):
+This is the **random linear classifier in pseudocode** (from the [notes](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/courseware/Week1/linear_classifiers/7)):
 
 ![](https://i.ibb.co/nwzfDsN/images-linear-classifiers-learning-linear-classifiers-codebox-1-crop.png)
 
