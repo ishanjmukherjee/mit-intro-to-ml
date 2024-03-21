@@ -84,7 +84,7 @@ $$\epsilon_{n'}(h) = \frac{1}{n'} \sum_{i=n+1}^{n+n'} \mathcal{L}(h(x^{(i)}),y^{
 
 ## Learning algorithms
 
-We have to write a **learning algorithm** parametrized on the hypothesis class $\mathcal{H}$ which takes in a training data set $\mathcal{D}$ and outputs a hypothesis $h$. Note that we don't individually write the hypothesis themselves; instead, we write an algorithm that looks at the data and finds a good hypothesis for us.  
+We have to write a **learning algorithm** parametrized on the hypothesis class $\mathcal{H}$ which takes in a training data set $\mathcal{D}$ and outputs a hypothesis $h$. Note that we don't individually write the hypotheses themselves; instead, we write an algorithm that looks at the data and finds a good hypothesis for us.  
 
 $$\begin{CD} 
 @>\mathcal{D}>> \boxed{\text{Learning Algorithm}(\mathcal{H})}  @>h>> \end{CD}$$
