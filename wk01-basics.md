@@ -117,7 +117,7 @@ So, $\theta^{T}x + \theta_0 \in \mathbb{R}$. In other words, $\theta^{T}x + \the
 
 This is the **random linear classifier in pseudocode** (from the [notes](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/courseware/Week1/linear_classifiers/7)):
 
-![](https://i.ibb.co/nwzfDsN/images-linear-classifiers-learning-linear-classifiers-codebox-1-crop.png)
+![Pseudocode for the random linear classifier algorithm](https://i.ibb.co/nwzfDsN/images-linear-classifiers-learning-linear-classifiers-codebox-1-crop.png)
 
 The function randomly generates $(\theta, \theta_{0})$ pairs $k$ times, and chooses the pair that gives the least error.
 
