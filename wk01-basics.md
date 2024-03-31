@@ -22,7 +22,7 @@ The challenges of machine learning, step-by-step:
 
 The *only* part of the problem that the computer does for us is running the algorithm. Machine learning is not magic!
 
-A deep philosophical challenge in machine learning is using data the model was trained on make predictions about other things. Kaelbling calls this almost an act of "hubris". For example: getting data on temperature in a location and using it to make predictions about temperatures there in the future. 
+A deep philosophical challenge in machine learning is using data the model was *trained on* make predictions about *other data*. Kaelbling calls this almost an act of "hubris". For example: getting data on temperature in a location and using it to make predictions about temperatures there in the future. 
 
 ## Supervised learning: setting
 
