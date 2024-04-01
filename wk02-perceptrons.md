@@ -22,7 +22,7 @@ The first point/example in the training data is always a mistake. Since $\theta 
 
 Kaelbling presents a [~3-minute demonstration](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/courseware/Week2/perceptron/4) of the perceptron in action.
 ## Evaluating learning algorithms - validation
-Suppose you run your model learning algorithm to find that $\theta$ and $\theta_0$ produce the lowest error on the training set. Call this error $\epsilon_n(\theta, \theta_0)$. $\epsilon_n(\theta, \theta_0)$ is *too low* of an estimate for the error on the test data set --- it would have worked to just memorize the training data and get zero error; finding a model that generalizes to test data is the hard part.
+Suppose you run your model learning algorithm to find that $\theta$ and $\theta_0$ produce the lowest error on the training set. Call this error $\mathcal{E}_n(\theta, \theta_0)$. $\mathcal{E}_n(\theta, \theta_0)$ is *too low* of an estimate for the error on the test data set --- it would have worked to just memorize the training data and get zero error; finding a model that generalizes to test data is the hard part.
 
 To get a more accurate sense for the error in our model's predictions, we portion off some training data as *validation data*, i.e., data never shown to the model while training and used exclusively to find its error.
 
@@ -48,7 +48,7 @@ $$h(x^{(i)}; \theta, \theta_0) = y^{(i)}$$
 
 Another way to say this is that the training error is zero:
 
-$$\epsilon_n(h) = 0$$ 
+$$\mathcal{E}_n(h) = 0$$ 
 ## Theory of perceptron - margin of a dataset
 The **margin of a labeled data point** $(x,y)$ with respect to a separator $\theta, \theta_0$ is:
 
@@ -73,7 +73,7 @@ the perceptron will make at most $\left(\frac{R}{\gamma}\right)^2$ mistakes.
 
 Further, after the algorithm has finished running, the hypothesis generated will be a *perfect* linear separator of the data.
 ## Proof sketch of the perceptron convergence theorem
-Initialize $\theta^{(0)} = \vec{0}$. Let $\theta^{(k)}$ be the hyperplane after the perceptron algorithm has made $k$ mistakes. Let $\theta^{*}$ be the good separator. Note that both $\theta^{(k)}$ and $\theta^{*}$ go through the origin. We will show that the angle between them decreases usefully on each post-mistake update.
+Initialize $\theta^{(0)} = \vec{0}$. Let $\theta^{(k)}$ be the hyperplane after the perceptron algorithm has made $k$ mistakes. Let $\theta^{\*}$ be the good separator. Note that both $\theta^{(k)}$ and $\theta^{\*}$ go through the origin. We will show that the angle between them decreases usefully on each post-mistake update.
 
 The cosine of the angle between the separators is:
 
@@ -106,7 +106,7 @@ $$
 \frac{\theta^{(k)} \cdot \theta^{\*}}{\lVert \theta^{\*} \rVert} \ge k\gamma
 $$
 
-Before looking at the second factor, note that since $(x^{(i)}, y^{(i)})$ is classified incorrectly after the $(k-1)$th mistake, $y^{(i)} \left(\theta^{(k-1)} \cdot x^{(i)} \right) \le 0$ (i.e., the prediction $\text{sgn}\left(\theta^{(k-1)} \cdot x^{(i)} \right)$ differs from $y^{(i)}$). Also, whatever $y^{(i)}$ is ($+1$, $0$ or $-1$), $\left(y^{(i)}\right)^2$ is $0$ or $1$. 
+Before looking at the second factor, note that since $(x^{(i)}, y^{(i)})$ is classified incorrectly after the $(k-1)$ th mistake, $y^{(i)} \left(\theta^{(k-1)} \cdot x^{(i)} \right) \le 0$ (i.e., the prediction $\text{sgn}\left(\theta^{(k-1)} \cdot x^{(i)} \right)$ differs from $y^{(i)}$). Also, whatever $y^{(i)}$ is ($+1$, $0$ or $-1$), $\left(y^{(i)}\right)^2$ is $0$ or $1$. 
 
 Bounding the second factor:
 
