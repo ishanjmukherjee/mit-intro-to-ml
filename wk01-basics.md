@@ -76,11 +76,11 @@ For now, though, we will aim for a small loss on training data as a *proxy* for 
 
 Training set has $n$ elements: $\lbrace(x^{(1)},y^{(1)}), \dots, (x^{(n)},y^{(n)})\rbrace$. Training set error is:
 
-$$\epsilon_n(h) = \frac{1}{n} \sum_{i=1}^{n} \mathcal{L}(h(x^{(i)}),y^{(i)})$$
+$$\mathcal{E}\_n(h) = \frac{1}{n} \sum_{i=1}^{n} \mathcal{L}(h(x^{(i)}),y^{(i)})$$
 
 Training set has $n'$ elements: $\lbrace(x^{(n+1)},y^{(n+1)}), \dots, (x^{(n+n')},y^{(n+n')})\rbrace$. Test set error is:
 
-$$\epsilon_{n'}(h) = \frac{1}{n'} \sum_{i=n+1}^{n+n'} \mathcal{L}(h(x^{(i)}),y^{(i)})$$
+$$\mathcal{E}\_{n'}(h) = \frac{1}{n'} \sum_{i=n+1}^{n+n'} \mathcal{L}(h(x^{(i)}),y^{(i)})$$
 
 ## Learning algorithms
 
@@ -123,7 +123,7 @@ The function randomly generates $(\theta, \theta_{0})$ pairs $k$ times, and choo
 
 The arguments of the function are the training data set $\cal D$, the **hyperparameter** $k$, and the degree of $x$ --- $d$. A hyperparameter is a parameter of the machine learning algorithm (as opposed to being a parameter of the hypothesis).
 
-For this algorithm, as $k$ gets larger, the error $\epsilon$ decreases, because repeating the algorithm more times makes it more likely you stumble across a good hypothesis. However, you also start hitting diminishing returns. The relationship might look something like this:
+For this algorithm, as $k$ gets larger, the error $\\mathcal{E}$ decreases, because repeating the algorithm more times makes it more likely you stumble across a good hypothesis. However, you also start hitting diminishing returns. The relationship might look something like this:
 
 ![Plot of hyperparameter vs k](https://i.ibb.co/mJcywgb/k-v-error.png)
 
