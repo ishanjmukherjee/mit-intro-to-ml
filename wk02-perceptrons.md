@@ -147,7 +147,7 @@ k &\le \left(\frac{R}{\gamma} \right)^{2}
 
 Thus, the number of mistakes $k$ will be at most $\left(\frac{R}{\gamma} \right)^{2}$.
 
-Note that while the perceptron is guaranteed to converge on *some* separator, it may not necessarily be the *best possible* separator.
+Note that while the perceptron is guaranteed to converge on *some* hypothesis, it may not necessarily be the *best possible* hypothesis.
 
 This [Cornell CS lecture note](https://www.cs.cornell.edu/courses/cs4780/2022fa/lectures/lecturenote03.html) illustrates a perceptron updating:
 
